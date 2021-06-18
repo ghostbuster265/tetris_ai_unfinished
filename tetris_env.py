@@ -11,31 +11,6 @@ from rl.agents.cem import CEMAgent
 from rl.memory import EpisodeParameterMemory
 
 class TetrisEnv(gym.Env):
-    '''
-    Observation:
-        Matrix
-
-    Actions:
-        Type: Discrete(3)
-        Num   Action
-        0     Nothing
-        1     Move down
-        2     Move left
-        3     Move right
-        4     Rotate
-
-    Reward:
-        -2 for building a single tower without cleaning rows
-        -1 for making a hole
-        1 for cleaning 1 row at a time
-        4 for cleaning 4 rows at a time
-
-    Starting state:
-        Empty matrix
-
-    Episode Termination:
-        Any column height is more than 20.
-    '''
     metadata = {'render.modes': ['human']}
 
     def __init__(self,render=False):
