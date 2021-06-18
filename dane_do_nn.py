@@ -173,13 +173,13 @@ def data(n):
                     # f.append(figure_blocks)
                     a.append([answer])
 
-    # m=np.asarray(m)
-    # a=np.asarray(a)
-    # m=m.astype('float32')
-    # a=a.astype('float32')
+    m=np.asarray(m)
+    a=np.asarray(a)
+    m=m.astype('float32')
+    a=a.astype('float32')
     return m,a
 
-m,a = data(1)
-for row in m[0]: print(row)
+#m,a = data(1)
+#for row in m[0]: print(row)
 # print(m[0].shape)
 # print(a[0])
