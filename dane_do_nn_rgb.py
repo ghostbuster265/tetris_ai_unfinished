@@ -196,6 +196,6 @@ def data(n):
     a=a.astype('float32')
     return m,a
 
-m,a = data(1)
+#m,a = data(1)
 # for row in m[0]: print(row)
-print(m.shape)
+#print(m.shape)
